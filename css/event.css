@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background: url('../images/event.jpg') no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 2px solid purple;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: violet;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login-btn {
+  background: transparent;
+  border: 1px solid purple;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: purple;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Main Content */
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 40px 40px;
+  gap: 20px;
+}
+
+.events {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.events h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.event-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
